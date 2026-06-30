@@ -1,20 +1,146 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
-  margin: 0;
-}
-
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+/* ============================
+   FOOTER WRAPPER
+   ============================ */
+   .nttfooter-wrapper {
+    background: #001b3a;
+    color: #ffffff;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
   }
-}
+  
+  /* ============================
+     TOP COLUMNS
+     ============================ */
+  .nttfooter-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: flex-start;
+  }
+  
+  .nttfooter-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 200px;
+  }
+  
+  .nttfooter-col a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+  
+  .nttfooter-col a:hover {
+    opacity: 1;
+  }
+  
+  /* ============================
+     CTA BUTTONS
+     ============================ */
+  .nttfooter-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .nttfooter-cta-btn {
+    border: 1px solid #f5d000;
+    padding: 12px 28px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .nttfooter-cta-btn:hover {
+    border-color: #ffffff;
+  }
+  
+  /* ============================
+     SOCIAL ICONS
+     ============================ */
+  .nttfooter-social {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nttfooter-social-icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    color: #001b3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* ============================
+     LEGAL LINKS
+     ============================ */
+  .nttfooter-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .nttfooter-legal a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+    opacity: 0.85;
+  }
+  
+  .nttfooter-legal a:hover {
+    opacity: 1;
+  }
+  
+  /* ============================
+     LANGUAGE SELECTOR
+     ============================ */
+  .nttfooter-language {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  /* ============================
+     COPYRIGHT
+     ============================ */
+  .nttfooter-copy {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  /* ============================
+     RESPONSIVE
+     ============================ */
+  @media (max-width: 900px) {
+    .nttfooter-columns {
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .nttfooter-cta {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .nttfooter-social {
+      justify-content: flex-start;
+    }
+  }
+  
