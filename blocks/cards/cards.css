@@ -25,3 +25,127 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+/***********************************************
+ * NTT DATA FUTURE-FOCUSED INSIGHTS (HOME SCROLL)
+ * Applies ONLY to .cards.home.block
+ ***********************************************/
+ .cards.home.block {
+  /* FULL WIDTH BREAKOUT */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  background: #0A0A0A;
+  padding: 80px 0;
+}
+
+/* HORIZONTAL SCROLL */
+.cards.home.block > ul {
+  display: flex;
+  flex-wrap: nowrap;        /* NO WRAPPING */
+  overflow-x: auto;         /* SCROLLBAR */
+  overflow-y: hidden;
+  gap: 32px;
+
+  padding: 0 48px;
+  scroll-behavior: smooth;
+}
+
+/* SCROLLBAR STYLE */
+.cards.home.block > ul::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards.home.block > ul::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.cards.home.block > ul::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.cards.home.block > ul::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* CARD BASE STYLE */
+.cards.home.block > ul > li {
+  min-width: 360px;         /* CARD WIDTH */
+  background: transparent;
+  border: none;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* HOVER EFFECT */
+.cards.home.block > ul > li:hover {
+  transform: translateY(-6px);
+  opacity: 0.95;
+}
+
+/* IMAGE */
+.cards.home.block .cards-card-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* BODY */
+.cards.home.block .cards-card-body {
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+/* LABEL (Blog) */
+.cards.home.block .cards-card-body p:first-child {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.cards.home.block .cards-card-body p:nth-child(2) {
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* CTA */
+.cards.home.block .cards-card-body a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #FFD200;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+}
+
+/* CTA HOVER */
+.cards.home.block .cards-card-body a:hover {
+  color: #fff;
+}
+
+/* CTA ARROW */
+.cards.home.block .cards-card-body a::after {
+  content: "→";
+  transition: transform .2s ease;
+}
+
+/* ARROW MOVES ON HOVER */
+.cards.home.block > ul > li:hover a::after {
+  transform: translateX(4px);
+}
