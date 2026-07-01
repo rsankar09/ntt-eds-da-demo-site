@@ -1,4 +1,21 @@
-export default function decorate(block) {
+export default async function decorate(block) {
+  // Read JSON path from first <a> inside the block
+  const jsonPath = 'https://da-sc.adobeaem.workers.dev/preview/rsankar09/ntt-eds-da-demo-site/forms/header';
+  console.log('jsonPath', jsonPath)
+  const res = await fetch(jsonPath);
+  const { data } = await res.json();
+  console.log('data', data)
+
+  // const jsonLink = block.querySelector('a');
+  // if (!jsonLink) {
+  //   console.error('No JSON link found in header block.');
+  //   return;
+  // }
+
+  // const jsonPath = jsonLink.href;
+  // const res = await fetch(jsonPath);
+  // const { data } = await res.json();
+
   const wrapper = document.createElement('div');
   wrapper.className = 'nttheader-wrapper';
 
@@ -7,11 +24,10 @@ export default function decorate(block) {
      ------------------------------------------- */
   const brand = document.createElement('div');
   brand.className = 'nttheader-brand';
-  
 
   const logo = document.createElement('img');
-  logo.src = 'https://dam.nttdata.com/api/public/content/NTT-DATA-Logo?v=4ba3b0db';
-  logo.alt = 'NTT DATA Logo';
+  logo.src = data.logo.image;
+  logo.alt = data.logo.title;
   logo.width = 140;
   logo.height = 32;
   logo.className = 'nttheader-logo';
@@ -20,25 +36,22 @@ export default function decorate(block) {
   wrapper.append(brand);
 
   /* -------------------------------------------
-     NAVIGATION
+     NAVIGATION (Dynamic)
      ------------------------------------------- */
   const nav = document.createElement('ul');
   nav.className = 'nttheader-nav';
 
-  const navItems = [
-    { label: 'What we do', dropdown: true },
-    { label: 'What we think', dropdown: true },
-    { label: 'Who we are', dropdown: false },
-    { label: 'Newsroom', dropdown: false },
-    { label: 'Careers', dropdown: false },
-  ];
-
-  navItems.forEach(item => {
+  data.sections.forEach(section => {
     const li = document.createElement('li');
-    li.className = item.dropdown ? 'nav-item nav-drop' : 'nav-item';
-    li.textContent = item.label;
 
-    if (item.dropdown) {
+    const hasDropdown =
+      Array.isArray(section.categories) &&
+      section.categories.length > 0;
+
+    li.className = hasDropdown ? 'nav-item nav-drop' : 'nav-item';
+    li.textContent = section.name;
+
+    if (hasDropdown) {
       const arrow = document.createElement('span');
       arrow.className = 'nav-arrow';
       arrow.textContent = '▼';
@@ -51,7 +64,7 @@ export default function decorate(block) {
   wrapper.append(nav);
 
   /* -------------------------------------------
-     TOOLS (Language, Search, Contact)
+     TOOLS (Dynamic)
      ------------------------------------------- */
   const tools = document.createElement('div');
   tools.className = 'nttheader-tools';
@@ -62,17 +75,18 @@ export default function decorate(block) {
 
   const search = document.createElement('span');
   search.className = 'nttheader-icon icon-search';
-  search.textContent = '🔍';
+  search.textContent = data.search?.name || '🔍';
 
-  const contact = document.createElement('span');
+  const contact = document.createElement('a');
   contact.className = 'nttheader-icon icon-contact';
-  contact.textContent = '✉️';
+  contact.href = data.contactUs.link;
+  contact.textContent = data.contactUs.name || '✉️';
 
   tools.append(lang, search, contact);
   wrapper.append(tools);
 
   /* -------------------------------------------
-     MOBILE HAMBURGER
+     MOBILE BURGER
      ------------------------------------------- */
   const burger = document.createElement('button');
   burger.className = 'nttheader-burger';
