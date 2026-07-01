@@ -1,0 +1,138 @@
+.nttheader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #001b3a;
+    padding: 16px 32px;
+    position: relative;
+  }
+  
+  /* BRAND */
+  .nttheader-brand img {
+    display: block;
+  }
+  
+  /* NAV */
+  .nttheader-nav {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-drop .nav-arrow {
+    margin-left: 6px;
+    font-size: 12px;
+  }
+  
+  /* FLYOUT PANEL */
+  .nttheader-flyout {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: none;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 100;
+  }
+  
+  .nttheader-flyout.open {
+    display: flex;
+  }
+  
+  /* LEFT COLUMN */
+  .flyout-left {
+    width: 260px;
+    border-right: 1px solid #ddd;
+    padding-right: 24px;
+  }
+  
+  .flyout-group {
+    padding: 12px 0;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .flyout-group:hover {
+    color: #0050ff;
+  }
+  
+  /* RIGHT COLUMN */
+  .flyout-right {
+    flex: 1;
+    padding-left: 24px;
+  }
+  
+  .flyout-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flyout-items li {
+    padding: 8px 0;
+  }
+  
+  .flyout-items a {
+    color: #001b3a;
+    text-decoration: none;
+  }
+  
+  .flyout-items a:hover {
+    text-decoration: underline;
+  }
+  
+  /* TOOLS */
+  .nttheader-tools {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #fff;
+  }
+  
+  .nttheader-icon {
+    cursor: pointer;
+  }
+  
+  /* BURGER */
+  .nttheader-burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 900px) {
+    .nttheader-nav {
+      display: none;
+    }
+  
+    .nttheader-burger {
+      display: block;
+    }
+  
+    .nttheader-wrapper.open .nttheader-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .nttheader-flyout {
+      position: static;
+      box-shadow: none;
+      padding: 16px;
+    }
+  }
+  
