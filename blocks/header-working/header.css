@@ -1,0 +1,101 @@
+/* ============================
+   WRAPPER
+   ============================ */
+   .nttheader-wrapper {
+    background: #001b3a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    position: relative;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  .nttheader-logo {
+    height: 32px;
+    width: auto;
+  }
+  
+  /* ============================
+     BRAND
+     ============================ */
+  .nttheader-brand {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* ============================
+     NAV
+     ============================ */
+  .nttheader-nav {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nttheader-nav .nav-item {
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .nav-arrow {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+  /* ============================
+     TOOLS
+     ============================ */
+  .nttheader-tools {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .nttheader-lang {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  .nttheader-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* ============================
+     MOBILE
+     ============================ */
+  .nttheader-burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .nttheader-nav,
+    .nttheader-tools {
+      display: none;
+    }
+  
+    .nttheader-wrapper.open .nttheader-nav,
+    .nttheader-wrapper.open .nttheader-tools {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  
+    .nttheader-burger {
+      display: block;
+    }
+  }
+  
