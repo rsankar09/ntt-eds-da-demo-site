@@ -1,0 +1,59 @@
+main .success-stories .success-stories-layout {
+  align-items: flex-start;
+}
+
+main .success-stories .success-stories-intro {
+  margin-bottom: 24px;
+}
+
+main .success-stories .success-stories-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+main .success-stories .success-stories-controls button {
+  background: transparent;
+  border: 1px solid var(--gmr-blue);
+  border-radius: 50%;
+  color: var(--gmr-blue);
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 44px;
+  line-height: 1;
+  width: 44px;
+}
+
+main .success-stories-track-wrap {
+  overflow: hidden;
+}
+
+main .success-stories-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.4s ease;
+}
+
+main .success-stories .success-card {
+  flex: 0 0 min(100%, 320px);
+}
+
+main .success-stories .success-card-image img {
+  border-radius: 8px;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+main .success-stories .success-card-body h3 {
+  color: var(--gmr-blue);
+  font-size: 1rem;
+  margin: 16px 0 8px;
+}
+
+@media (width >= 992px) {
+  main .success-stories .success-card {
+    flex-basis: calc(50% - 12px);
+  }
+}

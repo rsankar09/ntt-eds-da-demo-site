@@ -1,287 +1,216 @@
-/* ============================================================
-   GLOBAL HEADER WRAPPER
-   ============================================================ */
-   header .nav-wrapper {
-    background: #001b3a;            /* NTT DATA dark blue */
-    color: #fff;
-    width: 100%;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  /* ============================================================
-     NAV BASE LAYOUT
-     ============================================================ */
-  header nav {
-    box-sizing: border-box;
-    background: #001b3a;            /* unify background */
-    color: #fff;
-    display: grid;
-    grid-template:
-      'hamburger brand tools' var(--nav-height)
-      'sections sections sections' auto / auto 1fr auto;
-    align-items: center;
-    gap: 0 24px;
-    margin: auto;
-    max-width: 1248px;
-    height: var(--nav-height);
-    padding: 0 24px;
-    font-family: var(--body-font-family);
-  }
-  
-  header nav[aria-expanded='true'] {
-    grid-template:
-      'hamburger brand' var(--nav-height)
-      'sections sections' auto
-      'tools tools' var(--nav-height) / auto 1fr;
-    overflow-y: auto;
-    min-height: 100dvh;
-  }
-  
-  /* ============================================================
-     DESKTOP LAYOUT
-     ============================================================ */
-  @media (width >= 900px) {
-    header .nav-wrapper {
-      position: relative;
-    }
-  
-    header nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 0 32px;
-      max-width: 1264px;
-      padding: 0 32px;
-      background: #001b3a;
-    }
-  
-    header nav[aria-expanded='true'] {
-      min-height: 0;
-      overflow: visible;
-    }
-  }
-  
-  /* ============================================================
-     BRAND
-     ============================================================ */
-  header .nav-brand {
-    grid-area: brand;
-    flex-basis: 128px;
-    font-size: var(--heading-font-size-s);
-    font-weight: 700;
-    line-height: 1;
-  }
-  
-  header nav .nav-brand a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  header nav .nav-brand img {
-    width: 128px;
-    height: auto;
-  }
-  
-  /* ============================================================
-     HAMBURGER
-     ============================================================ */
-  header nav .nav-hamburger {
-    grid-area: hamburger;
-    height: 22px;
+header .header {
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 auto;
+  background: #fff;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 8%);
+}
+
+header .header-utility {
+  background: var(--gmr-blue);
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+header .header-utility-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-utility-height);
+}
+
+header .stock-ticker {
+  display: none;
+  gap: 24px;
+}
+
+header .stock-item strong {
+  margin-right: 6px;
+}
+
+header .positive {
+  color: #7dffb3;
+}
+
+header .utility-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+header .utility-contact,
+header .utility-search {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .primary-header {
+  border-bottom: 1px solid rgb(0 0 0 / 6%);
+}
+
+header .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-main-height);
+  position: relative;
+}
+
+header .navbar-logo img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+header .nav-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+}
+
+header .nav-list > li > p {
+  margin: 0;
+}
+
+header .nav-list a {
+  color: var(--gmr-blue);
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 12px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .nav-list a:hover {
+  color: var(--gmr-red);
+}
+
+header .has-mega {
+  position: relative;
+}
+
+header .mega-wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 320px;
+  background: #fff;
+  border: 1px solid rgb(0 0 0 / 8%);
+  box-shadow: 0 16px 40px rgb(0 0 0 / 12%);
+  padding: 24px;
+  z-index: 10;
+}
+
+header .has-mega.open .mega-wrapper,
+header .has-mega:focus-within .mega-wrapper {
+  display: block;
+}
+
+header .menu-title {
+  color: var(--gmr-blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+header .cat-item a {
+  color: var(--gmr-text);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 8px 0;
+  text-transform: none;
+}
+
+header .cat-item .arrow {
+  color: var(--gmr-gold);
+}
+
+header .nav-hamburger button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+}
+
+header .nav-hamburger-icon,
+header .nav-hamburger-icon::before,
+header .nav-hamburger-icon::after {
+  background: var(--gmr-blue);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+header .nav-hamburger-icon::before,
+header .nav-hamburger-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+header .nav-hamburger-icon::before {
+  top: -7px;
+}
+
+header .nav-hamburger-icon::after {
+  top: 7px;
+}
+
+@media (width >= 900px) {
+  header .stock-ticker {
     display: flex;
-    align-items: center;
   }
-  
-  header nav .nav-hamburger button {
-    height: 22px;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background: #001b3a;
-    color: #fff;
+
+  header .nav-list {
+    display: flex;
   }
-  
-  header nav .nav-hamburger-icon,
-  header nav .nav-hamburger-icon::before,
-  header nav .nav-hamburger-icon::after {
-    box-sizing: border-box;
-    display: block;
-    position: relative;
-    width: 20px;
-    background: #fff;
-  }
-  
-  header nav .nav-hamburger-icon::before,
-  header nav .nav-hamburger-icon::after {
-    content: '';
-    position: absolute;
-    background: #fff;
-  }
-  
-  header nav[aria-expanded='false'] .nav-hamburger-icon,
-  header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-  header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-    height: 2px;
-    border-radius: 2px;
-  }
-  
-  header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-    top: -6px;
-  }
-  
-  header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-    top: 6px;
-  }
-  
-  header nav[aria-expanded='true'] .nav-hamburger-icon {
-    height: 22px;
-  }
-  
-  header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-  header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-    top: 3px;
-    left: 1px;
-    transform: rotate(45deg);
-    width: 24px;
-    height: 2px;
-  }
-  
-  header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-    bottom: 3px;
-    transform: rotate(-45deg);
-  }
-  
-  @media (width >= 900px) {
-    header nav .nav-hamburger {
-      display: none;
-    }
-  }
-  
-  /* ============================================================
-     NAV SECTIONS (TOP LEVEL)
-     ============================================================ */
-  header nav .nav-sections {
-    grid-area: sections;
-    flex: 1 1 auto;
+
+  header .nav-hamburger {
     display: none;
-    visibility: hidden;
-    background: #001b3a;            /* unify background */
   }
-  
-  header nav[aria-expanded='true'] .nav-sections {
-    display: block;
-    visibility: visible;
-    align-self: start;
+}
+
+@media (width < 900px) {
+  header .nav-container .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+    padding: 16px 24px 24px;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
   }
-  
-  header nav .nav-sections ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: var(--body-font-size-s);
+
+  header .nav[aria-expanded="true"] .nav-list {
+    display: flex;
   }
-  
-  header nav .nav-sections ul > li {
-    font-weight: 500;
-    color: #fff;
+
+  header .mega-wrapper {
+    position: static;
+    box-shadow: none;
+    border: 0;
+    padding: 8px 0 8px 16px;
+    min-width: auto;
   }
-  
-  /* ============================================================
-     DESKTOP DROPDOWN BEHAVIOR
-     ============================================================ */
-  @media (width >= 900px) {
-    header nav .nav-sections {
-      display: block;
-      visibility: visible;
-      white-space: nowrap;
-    }
-  
-    header nav .nav-sections ul {
-      display: flex;
-      gap: 47px;
-      margin: 8px;
-    }
-  
-    header nav .nav-sections .nav-drop {
-      position: relative;
-      padding-right: 16px;
-      cursor: pointer;
-    }
-  
-    header nav .nav-sections .nav-drop::after {
-      content: '';
-      position: absolute;
-      top: 1.5em;
-      right: 2px;
-      width: 6px;
-      height: 6px;
-      border: 2px solid #fff;       /* white arrow */
-      border-width: 2px 2px 0 0;
-      transform: rotate(135deg);
-    }
-  
-    header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-      bottom: 0.5em;
-      transform: rotate(315deg);
-    }
-  
-    /* Dropdown panel */
-    header nav .nav-sections .default-content-wrapper > ul > li > ul {
-      display: none;
-      position: absolute;
-      left: -24px;
-      width: 240px;
-      top: 150%;
-      padding: 16px;
-      background: #fff;             /* white dropdown */
-      color: #001b3a;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-      white-space: initial;
-      z-index: 999;
-    }
-  
-    header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-      display: block;
-    }
-  
-    header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      left: 16px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 8px solid #fff;
-    }
-  
-    header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-      padding: 8px 0;
-    }
-  }
-  
-  /* ============================================================
-     TOOLS (LANGUAGE, ICONS)
-     ============================================================ */
-  header nav .nav-tools {
-    grid-area: tools;
-    color: #fff;
-  }
-  
-  header nav .nav-tools ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  header nav .nav-tools li {
-    color: #fff;
-    opacity: 0.85;
-  }
-  
-  /* Icons */
-  header nav .icon img {
-    filter: brightness(0) invert(1); /* make icons white */
-  }
-  
+}

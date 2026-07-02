@@ -1,146 +1,127 @@
-/* ============================
-   FOOTER WRAPPER
-   ============================ */
-   .nttfooter-wrapper {
-    background: #001b3a;
-    color: #ffffff;
-    padding: 48px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
+footer .footer {
+  background: var(--gmr-blue);
+  color: #fff;
+}
+
+footer .footer-topbar {
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+  padding: 24px 0;
+}
+
+footer .footer-topbar-inner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+footer .footer-logo img {
+  filter: brightness(0) invert(1);
+}
+
+footer .footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+footer .footer-social a {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .footer-links {
+  padding: 40px 0;
+}
+
+footer .footer-links-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (width >= 768px) {
+  footer .footer-links-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  /* ============================
-     TOP COLUMNS
-     ============================ */
-  .nttfooter-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    justify-content: flex-start;
+}
+
+@media (width >= 992px) {
+  footer .footer-links-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
-  
-  .nttfooter-col {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    min-width: 200px;
+}
+
+footer .footer-col h4 {
+  color: var(--gmr-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+footer .footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-col a {
+  color: rgb(255 255 255 / 85%);
+  display: block;
+  font-size: 0.8125rem;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+footer .footer-col a:hover {
+  color: #fff;
+}
+
+footer .footer-bottom {
+  background: rgb(0 0 0 / 15%);
+  padding: 16px 0;
+}
+
+footer .footer-bottom-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+@media (width >= 768px) {
+  footer .footer-bottom-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
-  
-  .nttfooter-col a {
-    color: #ffffff;
-    font-size: 15px;
-    text-decoration: none;
-    opacity: 0.85;
-    transition: opacity 0.2s ease;
-  }
-  
-  .nttfooter-col a:hover {
-    opacity: 1;
-  }
-  
-  /* ============================
-     CTA BUTTONS
-     ============================ */
-  .nttfooter-cta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
-  .nttfooter-cta-btn {
-    border: 1px solid #f5d000;
-    padding: 12px 28px;
-    border-radius: 8px;
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 15px;
-    transition: border-color 0.2s ease;
-  }
-  
-  .nttfooter-cta-btn:hover {
-    border-color: #ffffff;
-  }
-  
-  /* ============================
-     SOCIAL ICONS
-     ============================ */
-  .nttfooter-social {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .nttfooter-social-icon {
-    width: 40px;
-    height: 40px;
-    background: #ffffff;
-    color: #001b3a;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  
-  /* ============================
-     LEGAL LINKS
-     ============================ */
-  .nttfooter-legal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .nttfooter-legal a {
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: underline;
-    opacity: 0.85;
-  }
-  
-  .nttfooter-legal a:hover {
-    opacity: 1;
-  }
-  
-  /* ============================
-     LANGUAGE SELECTOR
-     ============================ */
-  .nttfooter-language {
-    font-size: 14px;
-    opacity: 0.85;
-  }
-  
-  /* ============================
-     COPYRIGHT
-     ============================ */
-  .nttfooter-copy {
-    font-size: 14px;
-    opacity: 0.85;
-  }
-  
-  /* ============================
-     RESPONSIVE
-     ============================ */
-  @media (max-width: 900px) {
-    .nttfooter-columns {
-      flex-direction: column;
-      gap: 32px;
-    }
-  
-    .nttfooter-cta {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .nttfooter-social {
-      justify-content: flex-start;
-    }
-  }
-  
+}
+
+footer .footer-bottom p {
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.8125rem;
+  margin: 0;
+}
+
+footer .footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+footer .footer-legal a {
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.8125rem;
+  text-decoration: none;
+}
+
+footer .footer-legal a:hover {
+  color: #fff;
+}

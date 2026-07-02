@@ -1,0 +1,43 @@
+main .careers-highlight .careers-grid {
+  align-items: stretch;
+  gap: 0;
+}
+
+main .careers-highlight .careerImg img {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+main .careers-highlight .careerImg {
+  margin-bottom: 16px;
+}
+
+main .careers-highlight .cardContent {
+  align-items: center;
+  background: var(--gmr-blue);
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  min-height: 280px;
+  padding: 32px;
+}
+
+main .careers-highlight .cardContent h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0 12px;
+}
+
+main .careers-highlight .cardContent p {
+  margin: 0;
+}
+
+main .careers-highlight .careerBtn {
+  margin-top: 16px;
+}
+
+main .careers-highlight .btn-lg {
+  width: 100%;
+}

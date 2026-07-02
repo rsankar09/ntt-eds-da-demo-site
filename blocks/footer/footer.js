@@ -1,117 +1,73 @@
+const FOOTER_COLUMNS = [
+  {
+    title: 'About Us',
+    links: ['About GMR Group', 'Vision', 'Our Legacy', 'Leadership', 'Corporate Governance'],
+  },
+  {
+    title: 'Businesses',
+    links: ['Airports & Aero Services', 'Energy', 'Sports', 'Transportation & Urban Infrastructure'],
+  },
+  {
+    title: 'Media & Insights',
+    links: ['Press Releases', 'Media Kit', 'Insights & Blogs', 'Success Stories'],
+  },
+  {
+    title: 'Sustainability',
+    links: ['Sustainability Overview', 'Sustainability at GAL', 'Sustainability at GPUIL'],
+  },
+  {
+    title: 'Foundation',
+    links: ['About GMRVF', 'Our Impact', 'Education', 'Community Development'],
+  },
+  {
+    title: 'Careers',
+    links: ['Career Overview', 'Working at GMR', 'Life at GMR', 'GMR on Campus'],
+  },
+];
+
 export default function decorate(block) {
   const wrapper = document.createElement('div');
-  wrapper.className = 'nttfooter-wrapper';
+  wrapper.className = 'page-footer';
 
-  /* -------------------------------------------
-     TOP NAVIGATION COLUMNS (About, Insights, Legal)
-     ------------------------------------------- */
-  const columns = document.createElement('div');
-  columns.className = 'nttfooter-columns';
+  const topbar = document.createElement('div');
+  topbar.className = 'footer-topbar';
+  topbar.innerHTML = `
+    <div class="container footer-topbar-inner">
+      <a href="/" class="footer-logo"><img src="/icons/gmr-logo.svg" alt="GMR" width="109" height="40" /></a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/gmr-group/" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.facebook.com/gmrgroup.in" aria-label="Facebook">Facebook</a>
+        <a href="https://www.youtube.com/channel/UCjusUoQlPw-XW-1omi95c0Q" aria-label="YouTube">YouTube</a>
+      </div>
+      <button type="button" class="btn btn-primary footer-group-sites">Group Sites</button>
+    </div>`;
 
-  const col1 = [
-    'About us',
-    'Our leaders',
-    'Our partners'
-  ];
-
-  const col2 = [
-    'Insights',
-    'News',
-    'Events'
-  ];
-
-  const col3 = [
-    'Legal and compliance',
-    'Company information',
-    'Report ethical concerns',
-    'DOL Postings'
-  ];
-
-  [col1, col2, col3].forEach(list => {
-    const col = document.createElement('div');
-    col.className = 'nttfooter-col';
-    list.forEach(item => {
-      const a = document.createElement('a');
-      a.href = '#';
-      a.textContent = item;
-      col.append(a);
-    });
-    columns.append(col);
+  const links = document.createElement('div');
+  links.className = 'footer-links';
+  const linksInner = document.createElement('div');
+  linksInner.className = 'container footer-links-grid';
+  FOOTER_COLUMNS.forEach((col) => {
+    const column = document.createElement('div');
+    column.className = 'footer-col';
+    column.innerHTML = `<h4>${col.title}</h4><ul>${col.links.map((l) => `<li><a href="#">${l}</a></li>`).join('')}</ul>`;
+    linksInner.append(column);
   });
+  links.append(linksInner);
 
-  wrapper.append(columns);
+  const bottom = document.createElement('div');
+  bottom.className = 'footer-bottom';
+  bottom.innerHTML = `
+    <div class="container footer-bottom-inner">
+      <p>© ${new Date().getFullYear()} GMR Group. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/sitemap">Sitemap</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+    </div>`;
 
-  /* -------------------------------------------
-     CTA BUTTONS (Contact us, Careers)
-     ------------------------------------------- */
-  const ctaWrap = document.createElement('div');
-  ctaWrap.className = 'nttfooter-cta';
-
-  ['Contact us', 'Careers'].forEach(label => {
-    const a = document.createElement('a');
-    a.href = '#';
-    a.textContent = label;
-    a.className = 'nttfooter-cta-btn';
-    ctaWrap.append(a);
-  });
-
-  wrapper.append(ctaWrap);
-
-  /* -------------------------------------------
-     SOCIAL ICONS
-     ------------------------------------------- */
-  const socialWrap = document.createElement('div');
-  socialWrap.className = 'nttfooter-social';
-
-  ['facebook', 'youtube', 'x', 'instagram', 'linkedin'].forEach(name => {
-    const icon = document.createElement('span');
-    icon.className = `nttfooter-social-icon icon-${name}`;
-    icon.textContent = name;
-    socialWrap.append(icon);
-  });
-
-  wrapper.append(socialWrap);
-
-  /* -------------------------------------------
-     LEGAL LINKS
-     ------------------------------------------- */
-  const legalWrap = document.createElement('div');
-  legalWrap.className = 'nttfooter-legal';
-
-  [
-    'Terms of use',
-    'Accessibility statement',
-    'Privacy policy',
-    'Cookie policy',
-    'Sitemap',
-    'Do not share my personal information'
-  ].forEach(label => {
-    const a = document.createElement('a');
-    a.href = '#';
-    a.textContent = label;
-    legalWrap.append(a);
-  });
-
-  wrapper.append(legalWrap);
-
-  /* -------------------------------------------
-     LANGUAGE SELECTOR
-     ------------------------------------------- */
-  const lang = document.createElement('div');
-  lang.className = 'nttfooter-language';
-  lang.textContent = 'United States • English';
-  wrapper.append(lang);
-
-  /* -------------------------------------------
-     COPYRIGHT
-     ------------------------------------------- */
-  const copyright = document.createElement('div');
-  copyright.className = 'nttfooter-copy';
-  copyright.textContent = '© 2026 NTT DATA, Inc.';
-  wrapper.append(copyright);
-
-  /* -------------------------------------------
-     Replace block
-     ------------------------------------------- */
+  wrapper.append(topbar, links, bottom);
   block.replaceChildren(wrapper);
 }

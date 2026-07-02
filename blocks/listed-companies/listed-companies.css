@@ -1,0 +1,112 @@
+main .listed-companies {
+  background: var(--gmr-blue);
+  color: #fff;
+  margin: 0 calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
+  width: 100vw;
+}
+
+main .listed-companies .listed-companies-header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (width >= 768px) {
+  main .listed-companies .listed-companies-header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+main .listed-companies .listed-companies-header h2 {
+  color: #fff;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin: 0;
+}
+
+main .listed-companies .listed-companies-header p {
+  color: rgb(255 255 255 / 85%);
+  margin: 0;
+  max-width: 640px;
+}
+
+main .listed-companies .companiesGrid {
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 12px;
+  height: 100%;
+  padding: 24px;
+}
+
+main .listed-companies .listed-company-item h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0 0 12px;
+}
+
+main .listed-companies .listed-company-item p {
+  color: rgb(255 255 255 / 85%);
+  margin: 0 0 16px;
+}
+
+main .listed-companies .companies-links {
+  margin-bottom: 24px;
+}
+
+main .listed-companies .btn-circle {
+  border-color: #fff;
+  color: #fff;
+}
+
+main .listed-companies .btn-circle:hover {
+  background: #fff;
+  color: var(--gmr-blue);
+}
+
+main .listed-companies .companiesStock {
+  background: #fff;
+  border-radius: 8px;
+  color: var(--gmr-text);
+  padding: 16px;
+}
+
+main .listed-companies .market-title {
+  color: var(--gmr-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+main .listed-companies .exchange-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+main .listed-companies .exchange {
+  font-weight: 600;
+}
+
+main .listed-companies .price {
+  font-weight: 700;
+}
+
+main .listed-companies .change.positive,
+main .listed-companies .arrow.positive {
+  color: #0a8f4d;
+}
+
+main .listed-companies .volume {
+  border-top: 1px solid rgb(0 0 0 / 8%);
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  padding-top: 8px;
+}

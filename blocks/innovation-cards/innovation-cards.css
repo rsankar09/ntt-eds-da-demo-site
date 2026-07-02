@@ -1,0 +1,40 @@
+main .innovation-cards {
+  background: var(--gmr-cream);
+  margin: 0 calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
+  width: 100vw;
+}
+
+main .innovation-cards .innovation-header {
+  margin-bottom: 40px;
+}
+
+main .innovation-cards .innovation-header p {
+  color: var(--gmr-text);
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+main .innovation-cards .innovation-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+main .innovation-cards .innovation-card-image img {
+  display: block;
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+main .innovation-cards .innovation-card-body {
+  padding: 24px;
+}
+
+main .innovation-cards .innovation-card-body h3 {
+  color: var(--gmr-blue);
+  font-size: 1.125rem;
+  margin: 0 0 12px;
+}

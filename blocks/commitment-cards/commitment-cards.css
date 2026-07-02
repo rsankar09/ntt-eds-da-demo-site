@@ -1,0 +1,37 @@
+main .commitment-cards .sec-commitment {
+  background: var(--gmr-blue);
+  color: #fff;
+  margin: 0 calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
+  width: 100vw;
+}
+
+main .commitment-cards .sec-head .sec-title {
+  color: #fff;
+}
+
+main .commitment-cards .comm-card {
+  margin-bottom: 24px;
+}
+
+main .commitment-cards .comm-card-img img {
+  border-radius: 8px 8px 0 0;
+  display: block;
+  width: 100%;
+}
+
+main .commitment-cards .comm-card-body {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  color: var(--gmr-text);
+  padding: 24px;
+}
+
+main .commitment-cards .comm-card-title h3 {
+  color: var(--gmr-blue);
+  margin: 0 0 12px;
+}
+
+main .commitment-cards .comm-card-desc p {
+  margin: 0 0 20px;
+}

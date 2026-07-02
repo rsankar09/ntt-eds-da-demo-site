@@ -1,0 +1,86 @@
+main .businesses-section {
+  background: #fff;
+}
+
+main .businesses-section .business-accordion-header h2 {
+  color: var(--gmr-blue);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin: 0 0 32px;
+}
+
+main .businesses-section .business-accordion-header .title {
+  display: block;
+}
+
+main .businesses-section .business-accordion-container {
+  display: grid;
+  gap: 32px;
+}
+
+@media (width >= 992px) {
+  main .businesses-section .business-accordion-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+main .businesses-section .business-image-preview img,
+main .businesses-section .business-image-preview picture {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+main .businesses-section .accordion-item {
+  border-bottom: 1px solid rgb(0 57 116 / 12%);
+}
+
+main .businesses-section .accordion-button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--gmr-blue);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 20px 0;
+  text-align: left;
+  width: 100%;
+}
+
+main .businesses-section .accordion-icon {
+  color: var(--gmr-gold);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+main .businesses-section .accordion-body {
+  display: none;
+  padding-bottom: 20px;
+}
+
+main .businesses-section .accordion-item.active .accordion-body {
+  display: block;
+}
+
+main .businesses-section .business-image {
+  display: none;
+}
+
+@media (width < 992px) {
+  main .businesses-section .business-image-preview {
+    display: none;
+  }
+
+  main .businesses-section .business-image {
+    display: block;
+    margin-top: 16px;
+  }
+
+  main .businesses-section .business-image img {
+    border-radius: 8px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "title": "GMR Group | Airports, Energy & Infrastructure Leadership",
+  "body": {
+    "color": "rgb(51, 51, 51)",
+    "bg": "rgb(255, 255, 255)",
+    "font": "\"Red Hat Display\", sans-serif",
+    "fontSize": "14px"
+  },
+  "header": {
+    "color": "rgb(51, 51, 51)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "font": "\"Red Hat Display\", sans-serif",
+    "fontSize": "14px"
+  },
+  "footer": {
+    "color": "rgb(51, 51, 51)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "font": "\"Red Hat Display\", sans-serif",
+    "fontSize": "14px"
+  },
+  "navLinks": [
+    {
+      "text": "About Us",
+      "href": "https://www.gmrgroup.com/about"
+    },
+    {
+      "text": "About GMR Group >",
+      "href": "https://www.gmrgroup.com/about"
+    },
+    {
+      "text": "Vision >",
+      "href": "https://www.gmrgroup.com/about/vision"
+    },
+    {
+      "text": "Our Legacy >",
+      "href": "https://www.gmrgroup.com/about/our-legacy"
+    },
+    {
+      "text": "Global Presence >",
+      "href": "https://www.gmrgroup.com/about/our-presence"
+    },
+    {
+      "text": "Leadership >",
+      "href": "https://www.gmrgroup.com/about/leadership"
+    },
+    {
+      "text": "Corporate Governance >",
+      "href": "https://www.gmrgroup.com/about/corporate-governance"
+    },
+    {
+      "text": "Awards & Accolades >",
+      "href": "https://www.gmrgroup.com/about/awards"
+    },
+    {
+      "text": "Partnerships & Alliances >",
+      "href": "https://www.gmrgroup.com/about/our-partners"
+    },
+    {
+      "text": "Businesses",
+      "href": "javascript:void(0);"
+    },
+    {
+      "text": "Airports & Aero Services >",
+      "href": "https://www.gmrgroup.com/airports-and-aero-services"
+    },
+    {
+      "text": "Energy >",
+      "href": "https://www.gmrgroup.com/energy"
+    },
+    {
+      "text": "Sports >",
+      "href": "https://www.gmrgroup.com/sports"
+    },
+    {
+      "text": "Transportation and Urban Infrastructure >",
+      "href": "https://www.gmrgroup.com/transportation-urban-infrastructure"
+    },
+    {
+      "text": "Other Services >",
+      "href": "https://www.gmrgroup.com/other-services"
+    },
+    {
+      "text": "Investors",
+      "href": "https://www.gmrgroup.com/investors"
+    },
+    {
+      "text": "News & Insights",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Press Releases >",
+      "href": "https://www.gmrgroup.com/press-releases"
+    },
+    {
+      "text": "Media Kit >",
+      "href": "https://www.gmrgroup.com/media-kit"
+    },
+    {
+      "text": "Brand Films & Visuals >",
+      "href": "https://www.gmrgroup.com/brand-films-visuals"
+    },
+    {
+      "text": "Insights & Blogs >",
+      "href": "https://www.gmrgroup.com/blogs"
+    },
+    {
+      "text": "Success Stories >",
+      "href": "https://www.gmrgroup.com/success-stories"
+    },
+    {
+      "text": "Sustainability",
+      "href": "https://www.gmrgroup.com/sustainability"
+    },
+    {
+      "text": "Sustainability Overview >",
+      "href": "https://www.gmrgroup.com/sustainability"
+    },
+    {
+      "text": "Sustainability at GAL >",
+      "href": "https://www.gmrgroup.com/sustainability/gal"
+    },
+    {
+      "text": "Sustainability at GPUIL >",
+      "href": "https://www.gmrgroup.com/sustainability/gpuil"
+    },
+    {
+      "text": "Foundation",
+      "href": "https://www.gmrgroup.com/foundation"
+    },
+    {
+      "text": "About GMRVF >",
+      "href": "https://www.gmrgroup.com/foundation"
+    },
+    {
+      "text": "Our Impact >",
+      "href": "https://www.gmrgroup.com/foundation/our-impact"
+    },
+    {
+      "text": "GMRVF Board >",
+      "href": "https://www.gmrgroup.com/foundation/gmrvf-board"
+    },
+    {
+      "text": "Empowerment & Livelihoods >",
+      "href": "https://www.gmrgroup.com/foundation/empowerment-livelihoods"
+    },
+    {
+      "text": "Education >",
+      "href": "https://www.gmrgroup.com/foundation/education"
+    },
+    {
+      "text": "Health, Hygiene & Sanitation >",
+      "href": "https://www.gmrgroup.com/foundation/health-hygiene-sanitation"
+    },
+    {
+      "text": "Community Development >",
+      "href": "https://www.gmrgroup.com/foundation/community-development"
+    },
+    {
+      "text": "Parampara Family Business Institute >",
+      "href": "https://www.gmrgroup.com/foundation/parampara-family-business-institute"
+    },
+    {
+      "text": "Media & Resources >",
+      "href": "https://www.gmrgroup.com/foundation/media-resources"
+    },
+    {
+      "text": "Careers",
+      "href": "https://www.gmrgroup.com/careers"
+    },
+    {
+      "text": "Career Overview >",
+      "href": "https://www.gmrgroup.com/careers"
+    },
+    {
+      "text": "Working at GMR >",
+      "href": "https://www.gmrgroup.com/careers/working-at-gmr"
+    },
+    {
+      "text": "Life at GMR >",
+      "href": "https://www.gmrgroup.com/careers/life-at-gmr"
+    },
+    {
+      "text": "GMR on Campus >",
+      "href": "https://www.gmrgroup.com/careers/gmr-on-campus"
+    },
+    {
+      "text": "FAQs >",
+      "href": "https://www.gmrgroup.com/careers/faqs"
+    },
+    {
+      "text": "About Us›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Businesses›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Investors",
+      "href": "https://www.gmrgroup.com/investors"
+    },
+    {
+      "text": "News & Insights›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Sustainability›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Foundation›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "Careers›",
+      "href": "https://www.gmrgroup.com/#"
+    },
+    {
+      "text": "/contact",
+      "href": "https://www.gmrgroup.com/contact"
+    },
+    {
+      "text": "Contact",
+      "href": "https://www.gmrgroup.com/contact"
+    },
+    {
+      "text": "Visit Investor Relations",
+      "href": "https://www.gmrgroup.com/investors"
+    }
+  ],
+  "blocks": [
+    {
+      "i": 0,
+      "tag": "DIV",
+      "classes": "section hero-banner-container",
+      "headings": [
+        "Many Businesses. One Vision.",
+        "Connecting People, Places, and Possibilities",
+        "India’s Firsts. India’s Future.",
+        "Milestones That Helped Shape India's Infrastructure",
+        "Bhogapuram Validation Flight",
+        "Bhogapuram Airport Achieves Key Milestone",
+        "GMR Varalakshmi Foundation Annual Lecture",
+        "Sudha Murty Inspires at GMRVF Annual Lecture",
+        "Many Businesses. One Vision.",
+        "Connecting People, Places, and Possibilities",
+        "India’s Firsts. India’s Future.",
+        "Milestones That Helped Shape India's Infrastructure",
+        "Bhogapuram Validation Flight",
+        "Bhogapuram Airport Achieves Key Milestone",
+        "GMR Varalakshmi Foundation Annual Lecture",
+        "Sudha Murty Inspires at GMRVF Annual Lecture"
+      ],
+      "links": [
+        {
+          "text": "/content/dam/video/homepage_corporate.mp4",
+          "href": "https://www.gmrgroup.com/content/dam/video/homepage-corporate.mp4"
+        },
+        {
+          "text": "/content/dam/video/Home_corp_mobile_20May.mp4",
+          "href": "https://www.gmrgroup.com/content/dam/video/home-corp-mobile-20may.mp4"
+        },
+        {
+          "text": "/content/dam/legacy-video-new.mp4",
+          "href": "https://www.gmrgroup.com/content/dam/legacy-video-new.mp4"
+        },
+        {
+          "text": "/content/dam/video/home-legacy-mobile.mp4",
+          "href": "https://www.gmrgroup.com/content/dam/video/home-legacy-mobile.mp4"
+        },
+        {
+          "text": "/content/dam/video/Bhogaopuram-Video.mp4",
+          "href": "https://www.gmrgroup.com/content/dam/video/bhogaopuram-video.mp4"
+        }
+      ],
+      "hasVideo": true,
+      "hasImg": false
+    },
+    {
+      "i": 1,
+      "tag": "DIV",
+      "classes": "section fragment-container",
+      "headings": [
+        "Our Businesses /\n     \n      Pillars of Value Creation",
+        "Airports & Aero Services",
+        "Energy",
+        "Sports",
+        "Transportation & Urban Infrastructure",
+        "Foundation",
+        "Other Services"
+      ],
+      "links": [
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/airports-and-aero-services"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/energy"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/sports"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/transportation-urban-infrastructure"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/foundation"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    },
+    {
+      "i": 2,
+      "tag": "DIV",
+      "classes": "section listed-companies-container",
+      "headings": [
+        "Listed Companies",
+        "GMR Airports Limited (GAL)",
+        "GMR Power & Urban Infra Limited (GPUIL)"
+      ],
+      "links": [
+        {
+          "text": "Visit Investor Relations",
+          "href": "https://www.gmrgroup.com/investors"
+        },
+        {
+          "text": "https://gmraero.com/",
+          "href": "https://gmraero.com/"
+        },
+        {
+          "text": "Visit Website",
+          "href": "https://gmraero.com/"
+        },
+        {
+          "text": "",
+          "href": "https://www.gmrgroup.com/#"
+        },
+        {
+          "text": "https://www.gmrpui.com/",
+          "href": "https://www.gmrpui.com/"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": false
+    },
+    {
+      "i": 3,
+      "tag": "DIV",
+      "classes": "section success-stories-container",
+      "headings": [
+        "Success Stories",
+        "Istanbul Sabiha Gökçen International Airport, Turkey",
+        "Clark International Airport, Philippines",
+        "Institutionalizing 5S at GMR Warora Energy Limited",
+        "Driving Safety, Reliability & Productivity The 5S at journey in GMR Kamalanga Energy Limited",
+        "GMR Energy Case Study Island Power Project Singapore",
+        "Building Scale at Speed: GMR’s Entry into Large-Scale Warehousing",
+        "Algae-Based Carbon Capture & Air Purification",
+        "GMR Completes New Bhaupur–DDU Section of EDFC 2",
+        "AI-powered Forecasting Platform for Energy Trading",
+        "Airport Service Transformation: The Case of Delhi International Airport"
+      ],
+      "links": [
+        {
+          "text": "Explore Our Success Stories",
+          "href": "https://www.gmrgroup.com/success-stories"
+        },
+        {
+          "text": "",
+          "href": "https://www.gmrgroup.com/success-stories/istanbul-sabiha-gokcen-international-airport-turkey"
+        },
+        {
+          "text": "Istanbul Sabiha Gökçen International Airport, Turkey",
+          "href": "https://www.gmrgroup.com/success-stories/istanbul-sabiha-gokcen-international-airport-turkey"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/success-stories/istanbul-sabiha-gokcen-international-airport-turkey"
+        },
+        {
+          "text": "",
+          "href": "https://www.gmrgroup.com/success-stories/clark-international-airport-philippines"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    },
+    {
+      "i": 4,
+      "tag": "DIV",
+      "classes": "section innovation-cards-container",
+      "headings": [
+        "Built From A DNA Of Innovation",
+        "AI-Powered Digital Twin Platform",
+        "How GWEL Achieved the British Safety Council Sword of Honour",
+        "GMR Innovex",
+        "AI-Powered Digital Twin Platform",
+        "How GWEL Achieved the British Safety Council Sword of Honour",
+        "GMR Innovex"
+      ],
+      "links": [
+        {
+          "text": "/success-stories/rajiv-gandhi-international-airport-digital-twin",
+          "href": "https://www.gmrgroup.com/success-stories/rajiv-gandhi-international-airport-digital-twin"
+        },
+        {
+          "text": "/success-stories/how-gwel-achieved-british-safety-council-sword-of-honour",
+          "href": "https://www.gmrgroup.com/success-stories/how-gwel-achieved-british-safety-council-sword-of-honour"
+        },
+        {
+          "text": "/other-services/innovation",
+          "href": "https://www.gmrgroup.com/other-services/innovation"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/success-stories/rajiv-gandhi-international-airport-digital-twin"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/success-stories/how-gwel-achieved-british-safety-council-sword-of-honour"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    },
+    {
+      "i": 5,
+      "tag": "DIV",
+      "classes": "section commitment-cards-container",
+      "headings": [
+        "Our Commitment To Society",
+        "Sustainability",
+        "Foundation"
+      ],
+      "links": [
+        {
+          "text": "See Our Impact",
+          "href": "https://www.gmrgroup.com/sustainability"
+        },
+        {
+          "text": "Explore The Foundation",
+          "href": "https://www.gmrgroup.com/foundation"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    },
+    {
+      "i": 6,
+      "tag": "DIV",
+      "classes": "section careers-highlight-container",
+      "headings": [
+        "Grow With A Purpose-Driven Team",
+        "Be part of a team that values Innovation, Growth, and Impact."
+      ],
+      "links": [
+        {
+          "text": "Explore Life At GMR",
+          "href": "https://www.gmrgroup.com/careers/life-at-gmr"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    },
+    {
+      "i": 7,
+      "tag": "DIV",
+      "classes": "section news-updates-container",
+      "headings": [
+        "News & Updates",
+        "GMR Airports Expands Portfolio with Addition of Nagpur Airport; Reaffirms Commitment to Build Central India’s Next Aviation Hub",
+        "Delhi Airport’s Rise as a Global Aviation Hub",
+        "The Rise of the Woman Flyer: A Changing Travel Story at Delhi Airport"
+      ],
+      "links": [
+        {
+          "text": "Go To Newsroom",
+          "href": "https://www.gmrgroup.com/press-releases"
+        },
+        {
+          "text": "",
+          "href": "https://www.gmrgroup.com/press-releases/gmr-airports-expands-portfolio-with-addition-of-nagpur-airport-reaffirms-commitment-to-build-central-indias-next-aviation-hub"
+        },
+        {
+          "text": "GMR Airports Expands Portfolio with Addition of Nagpur Airport; Reaffirms Commitment to Build Central India’s Next Aviation Hub",
+          "href": "https://www.gmrgroup.com/press-releases/gmr-airports-expands-portfolio-with-addition-of-nagpur-airport-reaffirms-commitment-to-build-central-indias-next-aviation-hub"
+        },
+        {
+          "text": "Read More",
+          "href": "https://www.gmrgroup.com/press-releases/gmr-airports-expands-portfolio-with-addition-of-nagpur-airport-reaffirms-commitment-to-build-central-indias-next-aviation-hub"
+        },
+        {
+          "text": "",
+          "href": "https://www.gmrgroup.com/blogs/delhi-airport-rise-global-aviation-hub"
+        }
+      ],
+      "hasVideo": false,
+      "hasImg": true
+    }
+  ],
+  "cssLinks": [
+    "https://www.gmrgroup.com/styles/bootstrap.min.css",
+    "https://www.gmrgroup.com/styles/swiper-bundle.min.css",
+    "https://www.gmrgroup.com/styles/styles.css",
+    "https://www.gmrgroup.com/styles/theme.css",
+    "https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=block",
+    "https://www.gmrgroup.com/blocks/hero-banner/hero-banner.css",
+    "https://www.gmrgroup.com/styles/fonts.css",
+    "https://www.gmrgroup.com/blocks/header/header.css",
+    "https://www.gmrgroup.com/blocks/fragment/fragment.css",
+    "https://www.gmrgroup.com/blocks/search/search.css",
+    "https://www.gmrgroup.com/blocks/header-utility/header-utility.css",
+    "https://www.gmrgroup.com/blocks/businesses-section/businesses-section.css",
+    "https://www.gmrgroup.com/blocks/listed-companies/listed-companies.css",
+    "https://www.gmrgroup.com/blocks/success-stories/success-stories.css",
+    "https://www.gmrgroup.com/styles/swiper-bundle.min.css",
+    "https://www.gmrgroup.com/blocks/innovation-cards/innovation-cards.css",
+    "https://www.gmrgroup.com/blocks/commitment-cards/commitment-cards.css",
+    "https://www.gmrgroup.com/blocks/careers-highlight/careers-highlight.css",
+    "https://www.gmrgroup.com/blocks/news-updates/news-updates.css",
+    "https://www.gmrgroup.com/blocks/footer/footer.css",
+    "https://www.gmrgroup.com/styles/lazy-styles.css",
+    "https://www.gmrgroup.com/blocks/footer-topbars/footer-topbars.css",
+    "https://www.gmrgroup.com/blocks/footer-links/footer-links.css",
+    "https://www.gmrgroup.com/blocks/footer-bottoms/footer-bottoms.css",
+    "https://www.gmrgroup.com/blocks/cookie-consent/cookie-consent.css"
+  ],
+  "logoSrc": "https://www.gmrgroup.com/media_1b762889882e488c990cf862828a665da09d86865.svg?width=250&format=webply&optimize=medium"
+}
