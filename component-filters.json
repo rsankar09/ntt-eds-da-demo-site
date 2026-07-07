@@ -9,7 +9,6 @@
     "id": "section",
     "components": [
       "accordion",
-      "button",
       "cards",
       "carousel",
       "columns",
@@ -23,8 +22,8 @@
       "tabs",
       "table",
       "text",
-      "title",
-      "video"
+      "video",
+      "product-recommendations"
     ]
   },
   {
@@ -44,6 +43,36 @@
     "components": [
       "carousel-item"
     ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "columns-row"
+    ]
+  },
+  {
+    "id": "columns-row",
+    "components": []
+  },
+  {
+    "id": "columns-cell",
+    "components": [
+      "text",
+      "image"
+    ]
+  },
+  {
+    "id": "table",
+    "rte": {
+      "toolbar": {
+        "insert": [
+          "table"
+        ],
+        "sections": [
+          "insert"
+        ]
+      }
+    }
   },
   {
     "id": "tabs",
