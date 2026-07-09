@@ -52,10 +52,6 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          },
-          {
-            "name": "HomePageCards",
-            "value": "home"
           }          
         ]
       }
@@ -105,6 +101,21 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          },
+          {
+            "name": "Home Page Cards",
+            "value": "home"
+          }          
+        ]
       }
     ]
   },
