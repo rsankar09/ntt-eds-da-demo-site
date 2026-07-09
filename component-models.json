@@ -83,7 +83,7 @@
     ]
   },
   {
-    "id": "cards",
+    "id": "card",
     "fields": [
       {
         "component": "reference",
