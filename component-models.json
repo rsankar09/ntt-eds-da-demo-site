@@ -52,7 +52,11 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          }
+          },
+          {
+            "name": "HomePageCards",
+            "value": "home"
+          }          
         ]
       }
     ]

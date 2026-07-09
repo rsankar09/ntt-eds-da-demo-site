@@ -22,7 +22,7 @@
           "label": "Style",
           "options": [
             {
-              "name": "Highlight",
+              "name": "Highlight New",
               "value": "highlight"
             },
             {
