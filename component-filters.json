@@ -4,9 +4,9 @@
     "components": ["section"]
   },
   {
-    "...": "./section.json#/filters"
+    "...": "./ue/models/section.json#/filters"
   },
   {
-    "...": "./blocks/*.json#/filters"
+    "...": "./ue/models/blocks/*.json#/filters"
   }
 ]
