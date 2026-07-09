@@ -31,6 +31,18 @@
   ],
   "models": [
     {
+      "id": "cards",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "items",
+          "label": "Cards",
+          "valueType": "card",
+          "multi": true
+        }
+      ]
+    },
+    {
       "id": "card",
       "fields": [
         {
