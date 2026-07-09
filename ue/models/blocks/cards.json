@@ -54,5 +54,12 @@
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "cards",
+      "components": [
+        "card"
+      ]
+    }
+  ]
 }
