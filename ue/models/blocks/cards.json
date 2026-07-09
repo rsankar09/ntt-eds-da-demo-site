@@ -10,9 +10,18 @@
           "rows": "*",
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": "div:nth-child(1)>picture>img[src]" },
-            { "name": "imageAlt", "selector": "div:nth-child(1)>picture>img[alt]" },
-            { "name": "text", "selector": "div:nth-child(2)" }
+            {
+              "name": "image",
+              "selector": ".cards-card-image img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": ".cards-card-image img[alt]"
+            },
+            {
+              "name": "text",
+              "selector": "div[data-aue-prop='text']"
+            }
           ]
         }
       }
@@ -24,16 +33,47 @@
       "plugins": {
         "da": {
           "rows": 1,
-          "columns": 2,
+          "columns": 1,
           "fields": [
-            { "name": "image", "selector": "div:nth-child(1)>picture>img[src]" },
-            { "name": "imageAlt", "selector": "div:nth-child(1)>picture>img[alt]" },
-            { "name": "text", "selector": "div:nth-child(2)" }
+            {
+              "name": "image",
+              "selector": ".cards-card-image img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": ".cards-card-image img[alt]"
+            },
+            {
+              "name": "text",
+              "selector": "div[data-aue-prop='text']"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Image",
+      "id": "image",
+      "model": "image",
+      "plugins": {
+        "da": {
+          "name": "image",
+          "type": "image",
+          "fields": [
+            {
+              "name": "image",
+              "selector": "img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "img[alt]"
+            }
           ]
         }
       }
     }
   ],
+
   "models": [
     {
       "id": "cards",
@@ -52,22 +92,19 @@
       "fields": [
         {
           "component": "reference",
-          "valueType": "string",
           "name": "image",
           "label": "Image",
+          "valueType": "image",
           "multi": false
         },
         {
           "component": "text",
-          "valueType": "string",
           "name": "imageAlt",
-          "label": "Image Alt",
-          "multi": false
+          "label": "Alt Text"
         },
         {
           "component": "richtext",
           "name": "text",
-          "value": "",
           "label": "Text",
           "valueType": "string"
         },
@@ -78,14 +115,29 @@
           "valueType": "boolean"
         }
       ]
+    },
+    {
+      "id": "image",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Alt Text"
+        }
+      ]
     }
   ],
+
   "filters": [
     {
       "id": "cards",
-      "components": [
-        "cards"
-      ]
+      "components": ["cards"]
     }
   ]
 }
