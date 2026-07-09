@@ -53,6 +53,12 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_home",
+          "label": "Home Page Style",
+          "valueType": "boolean"
         }
       ]
     }
