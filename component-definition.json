@@ -95,8 +95,8 @@
           }
         },
         {
-          "title": "Card",
-          "id": "card",
+          "title": "Cards",
+          "id": "cards",
           "model": "card",
           "plugins": {
             "da": {
