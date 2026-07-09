@@ -97,7 +97,7 @@
         {
           "title": "Cards",
           "id": "cards",
-          "model": "card",
+          "model": "cards",
           "plugins": {
             "da": {
               "rows": 1,

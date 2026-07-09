@@ -3,7 +3,7 @@
     {
       "title": "Cards",
       "id": "cards",
-      "model": "card",
+      "model": "cards",
       "plugins": {
         "da": {
           "rows": 1,
@@ -28,7 +28,7 @@
   ],
   "models": [
     {
-      "id": "card",
+      "id": "cards",
       "fields": [
         {
           "component": "reference",
