@@ -104,8 +104,8 @@
           }
         },
         {
-          "title": "Card",
-          "id": "ca",
+          "title": "Cards",
+          "id": "cards",
           "plugins": {
             "xwalk": {
               "page": {
