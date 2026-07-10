@@ -83,32 +83,82 @@
     ]
   },
   {
-    "component": "container",
-    "name": "Cards",
-    "label": "Cards",
-    "id": "cards",
-    "multi": true,
+    "id": "card",
     "fields": [
       {
-        "component": "reference",
+        "component": "select",
+        "name": "displayModeSelect",
+        "label": "Display Mode",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "options": [
+          {
+            "name": "Six-grid layout",
+            "value": "six-grid layout select"
+          },
+          {
+            "name": "Text layout",
+            "value": "text layout select"
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "This is container",
+        "name": "container1",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "displayModeSelect"
+            },
+            "six-grid layout select"
+          ]
+        },
+        "multi": true,
+        "validation": {
+          "minSize": 1,
+          "maxSize": 6
+        },
+        "fields": [
+          {
+            "component": "text",
+            "label": "Link Text",
+            "name": "linkText",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Link",
+            "name": "link",
+            "valueType": "string"
+          },
+          {
+            "component": "reference",
+            "label": "Icon",
+            "name": "Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Alternative Text",
+            "name": "iconAlternativeText",
+            "valueType": "string"
+          }
+        ]
       },
       {
         "component": "text",
+        "label": "Text layout",
+        "name": "SearchBarText",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "condition": {
+          "===": [
+            {
+              "var": "displayModeSelect"
+            },
+            "text layout select"
+          ]
+        }
       }
     ]
   },
