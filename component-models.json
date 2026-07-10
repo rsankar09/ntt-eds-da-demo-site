@@ -83,7 +83,7 @@
     ]
   },
   {
-    "id": "card",
+    "id": "cards",
     "fields": [
       {
         "component": "select",
