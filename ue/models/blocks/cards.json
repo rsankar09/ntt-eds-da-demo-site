@@ -5,6 +5,7 @@
       "id": "cards",
       "model": "cards",
       "filter": "cards",
+      "multi": true,
       "plugins": {
         "da": {
           "rows": 1,
@@ -16,6 +17,7 @@
       "title": "Card",
       "id": "card",
       "model": "card",
+      "multi": true,
       "plugins": {
         "da": {
           "rows": 1,
