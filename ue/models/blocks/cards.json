@@ -12,7 +12,28 @@
                             "model": "cards"
                         }
                     }
-                }
+                },
+                "da": {
+                    "unsafeHTML": "<div class=\"cards\"><div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h2></h2><p></p></div></div></div></div>",
+                    "fields": [
+                        {
+                            "name": "image",
+                            "selector": "div>div>picture>img[src]"
+                        },
+                        {
+                            "name": "imageAlt",
+                            "selector": "div>div>picture>img[alt]"
+                        },
+                        {
+                            "name": "text",
+                            "selector": "div>div>h2"
+                        },
+                        {
+                            "name": "description",
+                            "selector": "div>div>p"
+                        }
+                    ]
+                  }
             }
         }
     ],
