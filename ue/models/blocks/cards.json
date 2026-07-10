@@ -55,7 +55,11 @@
   ],
   "models": [
     {
+      "component": "container",
+      "name": "Card",
+      "label": "Card",
       "id": "card",
+      "multi": true,
       "fields": [
         {
           "component": "reference",
