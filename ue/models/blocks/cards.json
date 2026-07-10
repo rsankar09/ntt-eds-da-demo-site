@@ -22,7 +22,7 @@
         "da": {
           "name": "card",
           "rows": 1,
-          "columns": 2,
+          "columns": 1,
           "fields": [
             {
               "name": "image",
