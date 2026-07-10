@@ -84,9 +84,9 @@
   },
   {
     "component": "container",
-    "name": "Card",
-    "label": "Card",
-    "id": "card",
+    "name": "Cards",
+    "label": "Cards",
+    "id": "cards",
     "multi": true,
     "fields": [
       {
