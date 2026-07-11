@@ -86,11 +86,39 @@
     "id": "cards",
     "fields": [
       {
+        "component": "select",
+        "name": "displayModeSelect",
+        "label": "Display Mode",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Six-grid layout",
+            "value": "six-grid layout select"
+          },
+          {
+            "name": "Text layout",
+            "value": "text layout select"
+          }
+        ]
+      },
+      {
         "component": "container",
         "label": "This is container",
         "name": "container1",
         "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "displayModeSelect"
+            },
+            "six-grid layout select"
+          ]
+        },
         "multi": true,
+        "validation": {
+          "minSize": 1,
+          "maxSize": 6
+        },
         "fields": [
           {
             "component": "text",
@@ -117,6 +145,20 @@
             "valueType": "string"
           }
         ]
+      },
+      {
+        "component": "text",
+        "label": "Text layout",
+        "name": "SearchBarText",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "displayModeSelect"
+            },
+            "text layout select"
+          ]
+        }
       }
     ]
   },
