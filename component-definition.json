@@ -110,8 +110,8 @@
           "filter": "cards",
           "plugins": {
             "da": {
-              "rows": 1,
-              "columns": 2
+              "rows": "*",
+              "columns": 1
             }
           }
         },

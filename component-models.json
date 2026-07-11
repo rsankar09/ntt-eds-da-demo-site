@@ -83,6 +83,18 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "items",
+        "label": "Items",
+        "valueType": "card",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -102,7 +114,6 @@
       {
         "component": "richtext",
         "name": "text",
-        "value": "",
         "label": "Text",
         "valueType": "string"
       }
