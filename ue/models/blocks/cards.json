@@ -89,10 +89,5 @@
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "cards",
-      "components": ["cards"]
-    }
-  ]
+  "filters": []
 }
