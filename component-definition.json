@@ -110,8 +110,23 @@
           "filter": "cards",
           "plugins": {
             "da": {
+              "unsafeHTML": "<ul class='cards'><li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li></ul>",
               "rows": "*",
-              "columns": 1
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": ".card-image picture img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": ".card-image picture img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": ".card-body h1"
+                }
+              ]
             }
           }
         },
@@ -121,19 +136,21 @@
           "model": "card",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"cards\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h1></h1></div></div></div>",
+              "unsafeHTML": "<li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li>",
+              "rows": 1,
+              "columns": 1,
               "fields": [
                 {
                   "name": "image",
-                  "selector": "div>div>picture>img[src]"
+                  "selector": ".card-image picture img[src]"
                 },
                 {
                   "name": "imageAlt",
-                  "selector": "div>div>picture>img[alt]"
+                  "selector": ".card-image picture img[alt]"
                 },
                 {
                   "name": "text",
-                  "selector": "div>div>h1"
+                  "selector": ".card-body h1"
                 }
               ]
             },
