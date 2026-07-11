@@ -86,79 +86,66 @@
     "id": "cards",
     "fields": [
       {
-        "component": "select",
-        "name": "displayModeSelect",
-        "label": "Display Mode",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Six-grid layout",
-            "value": "six-grid layout select"
-          },
-          {
-            "name": "Text layout",
-            "value": "text layout select"
-          }
-        ]
-      },
-      {
         "component": "container",
-        "label": "This is container",
-        "name": "container1",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "displayModeSelect"
-            },
-            "six-grid layout select"
-          ]
-        },
+        "name": "items",
+        "label": "Cards",
         "multi": true,
-        "validation": {
-          "minSize": 1,
-          "maxSize": 6
-        },
+        "collapsible": true,
         "fields": [
           {
-            "component": "text",
-            "label": "Link Text",
-            "name": "linkText",
+            "component": "text-input",
+            "label": "Title",
+            "name": "title",
             "valueType": "string"
           },
           {
-            "component": "text",
-            "label": "Link",
-            "name": "link",
+            "component": "text-input",
+            "label": "Description",
+            "name": "description",
             "valueType": "string"
           },
           {
             "component": "reference",
-            "label": "Icon",
-            "name": "Icon",
+            "label": "Image",
+            "name": "image",
             "valueType": "string"
           },
           {
-            "component": "text",
-            "label": "Alternative Text",
-            "name": "iconAlternativeText",
+            "component": "text-input",
+            "label": "Alt Text",
+            "name": "imageAlt",
             "valueType": "string"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "text-input",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
       },
       {
-        "component": "text",
-        "label": "Text layout",
-        "name": "SearchBarText",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "displayModeSelect"
-            },
-            "text layout select"
-          ]
-        }
+        "component": "text-input",
+        "label": "Description",
+        "name": "description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Image",
+        "name": "image",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "label": "Alt Text",
+        "name": "imageAlt",
+        "valueType": "string"
       }
     ]
   },
