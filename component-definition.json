@@ -112,7 +112,20 @@
             "da": {
               "rows": "*",
               "columns": 1,
-              "valueType": "card"
+              "fields": [
+                {
+                  "name": "card.image",
+                  "selector": ".cards-card-image img[src]"
+                },
+                {
+                  "name": "card.imageAlt",
+                  "selector": ".cards-card-image img[alt]"
+                },
+                {
+                  "name": "card.text",
+                  "selector": ".cards-card-body"
+                }
+              ]
             }
           }
         },
@@ -126,15 +139,15 @@
               "columns": 1,
               "fields": [
                 {
-                  "name": "card.image",
+                  "name": "image",
                   "selector": ".cards-card-image img[src]"
                 },
                 {
-                  "name": "card.imageAlt",
+                  "name": "imageAlt",
                   "selector": ".cards-card-image img[alt]"
                 },
                 {
-                  "name": "card.text",
+                  "name": "text",
                   "selector": ".cards-card-body"
                 }
               ]

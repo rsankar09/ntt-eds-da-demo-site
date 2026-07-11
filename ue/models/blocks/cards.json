@@ -9,7 +9,11 @@
         "da": {
           "rows": "*",
           "columns": 1,
-          "valueType": "card"
+          "fields": [
+            { "name": "card.image", "selector": ".cards-card-image img[src]" },
+            { "name": "card.imageAlt", "selector": ".cards-card-image img[alt]" },
+            { "name": "card.text", "selector": ".cards-card-body" }
+          ]
         }
       }
     },
@@ -22,10 +26,10 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-                { "name": "card.image", "selector": ".cards-card-image img[src]" },
-                { "name": "card.imageAlt", "selector": ".cards-card-image img[alt]" },
-                { "name": "card.text", "selector": ".cards-card-body" }
-        ]
+            { "name": "image", "selector": ".cards-card-image img[src]" },
+            { "name": "imageAlt", "selector": ".cards-card-image img[alt]" },
+            { "name": "text", "selector": ".cards-card-body" }
+          ]
         }
       }
     }
@@ -36,12 +40,12 @@
       "id": "cards",
       "fields": [
         {
-           "component": "container",
-            "name": "items",
-            "label": "Cards",
-            "multi": true,
-            "valueType": "card",
-            "collapsible": true
+          "component": "container",
+          "name": "items",
+          "label": "Cards",
+          "multi": true,
+          "valueType": "card",
+          "collapsible": true
         }
       ]
     },
