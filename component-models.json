@@ -106,8 +106,8 @@
           },
           {
             "component": "richtext",
-            "label": "text",
-            "name": "Text",
+            "label": "Text",
+            "name": "text",
             "valueType": "string"
           }
         ]
@@ -131,8 +131,8 @@
       },
       {
         "component": "richtext",
-        "label": "text",
-        "name": "Text",
+        "label": "Text",
+        "name": "text",
         "valueType": "string"
       }
     ]
