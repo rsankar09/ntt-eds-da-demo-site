@@ -110,7 +110,6 @@
           "filter": "cards",
           "plugins": {
             "da": {
-              "unsafeHTML": "<ul class='cards'></ul>",
               "rows": "*",
               "columns": 1
             }
