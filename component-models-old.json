@@ -83,6 +83,74 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "container",
+        "label": "This is container",
+        "name": "container1",
+        "valueType": "string",
+        "multi": true,
+        "validation": {
+          "minSize": 1,
+          "maxSize": 6
+        },
+        "fields": [
+          {
+            "component": "text",
+            "label": "Link Text",
+            "name": "linkText",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Link",
+            "name": "link",
+            "valueType": "string"
+          },
+          {
+            "component": "reference",
+            "label": "Icon",
+            "name": "Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Alternative Text",
+            "name": "iconAlternativeText",
+            "valueType": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
