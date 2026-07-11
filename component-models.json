@@ -86,35 +86,41 @@
     "id": "cards",
     "fields": [
       {
-        "component": "reference",
-        "name": "items",
-        "label": "Items",
-        "valueType": "card",
-        "multi": true
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
-      {
-        "component": "reference",
+        "component": "container",
+        "label": "This is container",
+        "name": "container1",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt"
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Text",
-        "valueType": "string"
+        "multi": true,
+        "validation": {
+          "minSize": 1,
+          "maxSize": 6
+        },
+        "fields": [
+          {
+            "component": "text",
+            "label": "Link Text",
+            "name": "linkText",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Link",
+            "name": "link",
+            "valueType": "string"
+          },
+          {
+            "component": "reference",
+            "label": "Icon",
+            "name": "Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Alternative Text",
+            "name": "iconAlternativeText",
+            "valueType": "string"
+          }
+        ]
       }
     ]
   },
