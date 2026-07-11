@@ -101,8 +101,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
-        "multi": false
+        "label": "Image"
       },
       {
         "component": "text",
