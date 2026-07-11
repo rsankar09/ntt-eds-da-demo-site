@@ -10,9 +10,9 @@
           "rows": "*",
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": ".card-image img[src]" },
-            { "name": "imageAlt", "selector": ".card-image img[alt]" },
-            { "name": "text", "selector": ".card-text" }
+            { "name": "image", "selector": ".cards-card-image img[src]" },
+            { "name": "imageAlt", "selector": ".cards-card-image img[alt]" },
+            { "name": "text", "selector": ".cards-card-body" }
           ]
         }
       }
@@ -26,10 +26,10 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": ".card-image img[src]" },
-            { "name": "imageAlt", "selector": ".card-image img[alt]" },
-            { "name": "text", "selector": ".card-text" }
-          ]
+            { "name": "image", "selector": ".cards-card-image img[src]" },
+            { "name": "imageAlt", "selector": ".cards-card-image img[alt]" },
+            { "name": "text", "selector": ".cards-card-body" }
+        ]
         }
       }
     }

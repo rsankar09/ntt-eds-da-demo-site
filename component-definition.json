@@ -115,15 +115,15 @@
               "fields": [
                 {
                   "name": "image",
-                  "selector": ".card-image img[src]"
+                  "selector": ".cards-card-image img[src]"
                 },
                 {
                   "name": "imageAlt",
-                  "selector": ".card-image img[alt]"
+                  "selector": ".cards-card-image img[alt]"
                 },
                 {
                   "name": "text",
-                  "selector": ".card-text"
+                  "selector": ".cards-card-body"
                 }
               ]
             }
@@ -140,15 +140,15 @@
               "fields": [
                 {
                   "name": "image",
-                  "selector": ".card-image img[src]"
+                  "selector": ".cards-card-image img[src]"
                 },
                 {
                   "name": "imageAlt",
-                  "selector": ".card-image img[alt]"
+                  "selector": ".cards-card-image img[alt]"
                 },
                 {
                   "name": "text",
-                  "selector": ".card-text"
+                  "selector": ".cards-card-body"
                 }
               ]
             }
