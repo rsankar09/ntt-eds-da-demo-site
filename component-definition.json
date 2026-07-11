@@ -111,21 +111,7 @@
           "plugins": {
             "da": {
               "rows": "*",
-              "columns": 1,
-              "fields": [
-                {
-                  "name": "card.image",
-                  "selector": ".cards-card-image img[src]"
-                },
-                {
-                  "name": "card.imageAlt",
-                  "selector": ".cards-card-image img[alt]"
-                },
-                {
-                  "name": "card.text",
-                  "selector": ".cards-card-body"
-                }
-              ]
+              "columns": 1
             }
           }
         },
@@ -136,19 +122,19 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 1,
+              "columns": 2,
               "fields": [
                 {
                   "name": "image",
-                  "selector": ".cards-card-image img[src]"
+                  "selector": "div:nth-child(1)>picture>img[src]"
                 },
                 {
                   "name": "imageAlt",
-                  "selector": ".cards-card-image img[alt]"
+                  "selector": "div:nth-child(1)>picture>img[alt]"
                 },
                 {
                   "name": "text",
-                  "selector": ".cards-card-body"
+                  "selector": "div:nth-child(2)"
                 }
               ]
             }

@@ -86,12 +86,11 @@
     "id": "cards",
     "fields": [
       {
-        "component": "container",
+        "component": "reference",
         "name": "items",
-        "label": "Cards",
-        "multi": true,
+        "label": "Items",
         "valueType": "card",
-        "collapsible": true
+        "multi": true
       }
     ]
   },
@@ -100,20 +99,22 @@
     "fields": [
       {
         "component": "reference",
-        "label": "Image",
+        "valueType": "string",
         "name": "image",
-        "valueType": "string"
+        "label": "Image",
+        "multi": false
       },
       {
         "component": "text",
-        "label": "Alt Text",
+        "valueType": "string",
         "name": "imageAlt",
-        "valueType": "string"
+        "label": "Image Alt",
+        "multi": false
       },
       {
         "component": "richtext",
-        "label": "Text",
         "name": "text",
+        "label": "Text",
         "valueType": "string"
       }
     ]
