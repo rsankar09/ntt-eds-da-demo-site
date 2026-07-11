@@ -129,14 +129,6 @@
                   "selector": "div:nth-child(1)"
                 },
                 {
-                  "name": "image",
-                  "selector": "div:nth-child(2)>picture>img[src]"
-                },
-                {
-                  "name": "imageAlt",
-                  "selector": "div:nth-child(2)>picture>img[alt]"
-                },
-                {
                   "name": "text",
                   "selector": "div:nth-child(3)"
                 }

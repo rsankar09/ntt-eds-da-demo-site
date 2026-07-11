@@ -22,8 +22,6 @@
           "columns": 3,
           "fields": [
             { "name": "text", "selector": "div:nth-child(1)" },
-            { "name": "image", "selector": "div:nth-child(2)>picture>img[src]" },
-            { "name": "imageAlt", "selector": "div:nth-child(2)>picture>img[alt]" },
             { "name": "text", "selector": "div:nth-child(3)" }
           ]
         }
@@ -52,18 +50,6 @@
           "component": "richtext",
           "name": "title",
           "label": "Title",
-          "valueType": "string"
-        },
-        {
-          "component": "image",
-          "name": "image",
-          "label": "Image",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "imageAlt",
-          "label": "Image Alt Text",
           "valueType": "string"
         },
         {

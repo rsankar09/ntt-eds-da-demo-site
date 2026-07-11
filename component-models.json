@@ -104,18 +104,6 @@
         "valueType": "string"
       },
       {
-        "component": "image",
-        "name": "image",
-        "label": "Image",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "valueType": "string"
-      },
-      {
         "component": "richtext",
         "name": "text",
         "label": "Text",
