@@ -19,16 +19,26 @@
       "plugins": {
         "da": {
           "rows": 1,
-          "columns": 3,
+          "columns": 2,
+          "unsafeHTML": "<div class=\"card\"><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><p></p></div></div>",
           "fields": [
-            { "name": "text", "selector": "div:nth-child(1)" },
-            { "name": "text", "selector": "div:nth-child(3)" }
+            {
+              "name": "image",
+              "selector": "div>div>picture>img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "div>div>picture>img[alt]"
+            },
+            {
+              "name": "text",
+              "selector": "div>div>p"
+            }
           ]
         }
       }
     }
   ],
-
   "models": [
     {
       "id": "cards",
@@ -47,10 +57,18 @@
       "id": "card",
       "fields": [
         {
-          "component": "richtext",
-          "name": "title",
-          "label": "Title",
-          "valueType": "string"
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt",
+          "multi": false
         },
         {
           "component": "richtext",

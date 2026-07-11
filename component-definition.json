@@ -122,15 +122,20 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 3,
+              "columns": 2,
+              "unsafeHTML": "<div class=\"card\"><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><p></p></div></div>",
               "fields": [
                 {
-                  "name": "text",
-                  "selector": "div:nth-child(1)"
+                  "name": "image",
+                  "selector": "div>div>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div>picture>img[alt]"
                 },
                 {
                   "name": "text",
-                  "selector": "div:nth-child(3)"
+                  "selector": "div>div>p"
                 }
               ]
             }
