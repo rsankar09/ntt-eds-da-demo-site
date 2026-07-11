@@ -90,27 +90,8 @@
         "name": "items",
         "label": "Cards",
         "multi": true,
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "reference",
-            "label": "Image",
-            "name": "image",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "label": "Alt Text",
-            "name": "imageAlt",
-            "valueType": "string"
-          },
-          {
-            "component": "richtext",
-            "label": "Text",
-            "name": "text",
-            "valueType": "string"
-          }
-        ]
+        "valueType": "card",
+        "collapsible": true
       }
     ]
   },
