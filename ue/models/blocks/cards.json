@@ -10,22 +10,10 @@
           "rows": "*",
           "columns": 1,
           "fields": [
-            {
-              "name": "title",
-              "selector": ".card-title"
-            },
-            {
-              "name": "description",
-              "selector": ".card-description"
-            },
-            {
-              "name": "image",
-              "selector": ".card-image img[src]"
-            },
-            {
-              "name": "imageAlt",
-              "selector": ".card-image img[alt]"
-            }
+            { "name": "title", "selector": ".card-title" },
+            { "name": "description", "selector": ".card-description" },
+            { "name": "image", "selector": ".card-image img[src]" },
+            { "name": "imageAlt", "selector": ".card-image img[alt]" }
           ]
         }
       }
@@ -39,22 +27,10 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-            {
-              "name": "title",
-              "selector": ".card-title"
-            },
-            {
-              "name": "description",
-              "selector": ".card-description"
-            },
-            {
-              "name": "image",
-              "selector": ".card-image img[src]"
-            },
-            {
-              "name": "imageAlt",
-              "selector": ".card-image img[alt]"
-            }
+            { "name": "title", "selector": ".card-title" },
+            { "name": "description", "selector": ".card-description" },
+            { "name": "image", "selector": ".card-image img[src]" },
+            { "name": "imageAlt", "selector": ".card-image img[alt]" }
           ]
         }
       }
