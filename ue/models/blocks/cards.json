@@ -9,11 +9,7 @@
         "da": {
           "rows": "*",
           "columns": 1,
-          "fields": [
-            { "name": "image", "selector": ".cards-card-image img[src]" },
-            { "name": "imageAlt", "selector": ".cards-card-image img[alt]" },
-            { "name": "text", "selector": ".cards-card-body" }
-          ]
+          "valueType": "card"
         }
       }
     },
@@ -26,9 +22,9 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": ".cards-card-image img[src]" },
-            { "name": "imageAlt", "selector": ".cards-card-image img[alt]" },
-            { "name": "text", "selector": ".cards-card-body" }
+                { "name": "card.image", "selector": ".cards-card-image img[src]" },
+                { "name": "card.imageAlt", "selector": ".cards-card-image img[alt]" },
+                { "name": "card.text", "selector": ".cards-card-body" }
         ]
         }
       }
