@@ -114,20 +114,16 @@
               "columns": 1,
               "fields": [
                 {
-                  "name": "title",
-                  "selector": ".card-title"
-                },
-                {
-                  "name": "description",
-                  "selector": ".card-description"
-                },
-                {
                   "name": "image",
                   "selector": ".card-image img[src]"
                 },
                 {
                   "name": "imageAlt",
                   "selector": ".card-image img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": ".card-text"
                 }
               ]
             }
@@ -143,20 +139,16 @@
               "columns": 1,
               "fields": [
                 {
-                  "name": "title",
-                  "selector": ".card-title"
-                },
-                {
-                  "name": "description",
-                  "selector": ".card-description"
-                },
-                {
                   "name": "image",
                   "selector": ".card-image img[src]"
                 },
                 {
                   "name": "imageAlt",
                   "selector": ".card-image img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": ".card-text"
                 }
               ]
             }

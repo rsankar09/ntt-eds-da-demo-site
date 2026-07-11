@@ -93,27 +93,21 @@
         "collapsible": true,
         "fields": [
           {
-            "component": "text-input",
-            "label": "Title",
-            "name": "title",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Description",
-            "name": "description",
-            "valueType": "string"
-          },
-          {
             "component": "reference",
             "label": "Image",
             "name": "image",
             "valueType": "string"
           },
           {
-            "component": "text-input",
+            "component": "text",
             "label": "Alt Text",
             "name": "imageAlt",
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "label": "text",
+            "name": "Text",
             "valueType": "string"
           }
         ]
@@ -124,27 +118,21 @@
     "id": "card",
     "fields": [
       {
-        "component": "text-input",
-        "label": "Title",
-        "name": "title",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "label": "Description",
-        "name": "description",
-        "valueType": "string"
-      },
-      {
         "component": "reference",
         "label": "Image",
         "name": "image",
         "valueType": "string"
       },
       {
-        "component": "text-input",
+        "component": "text",
         "label": "Alt Text",
         "name": "imageAlt",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "label": "text",
+        "name": "Text",
         "valueType": "string"
       }
     ]
