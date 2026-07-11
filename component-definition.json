@@ -110,7 +110,9 @@
           "filter": "cards",
           "plugins": {
             "da": {
-              "unsafeHTML": "<ul class='cards'></ul>"
+              "unsafeHTML": "<ul class='cards'></ul>",
+              "rows": "*",
+              "columns": 1
             }
           }
         },
@@ -128,7 +130,7 @@
                 "template": {
                   "name": "Card",
                   "model": "card",
-                  "image": "<img src='image.jpg' alt='Image'>",
+                  "image": "<img src=\"image.jpg\" alt=\"Image\">",
                   "imageAlt": "Image",
                   "text": "<h1>Welcome to our site</h1>"
                 }
