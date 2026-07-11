@@ -7,23 +7,8 @@
       "filter": "cards",
       "plugins": {
         "da": {
-          "unsafeHTML": "<ul class='cards'><li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li></ul>",
           "rows": "*",
-          "columns": 1,
-          "fields": [
-            {
-              "name": "image",
-              "selector": ".card-image picture img[src]"
-            },
-            {
-              "name": "imageAlt",
-              "selector": ".card-image picture img[alt]"
-            },
-            {
-              "name": "text",
-              "selector": ".card-body h1"
-            }
-          ]
+          "columns": 1
         }
       }
     },
@@ -33,23 +18,7 @@
       "model": "card",
       "plugins": {
         "da": {
-          "unsafeHTML": "<li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li>",
-          "rows": 1,
-          "columns": 1,
-          "fields": [
-            {
-              "name": "image",
-              "selector": ".card-image picture img[src]"
-            },
-            {
-              "name": "imageAlt",
-              "selector": ".card-image picture img[alt]"
-            },
-            {
-              "name": "text",
-              "selector": ".card-body h1"
-            }
-          ]
+          "unsafeHTML": "<li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li>"
         },
         "xwalk": {
           "page": {
@@ -93,13 +62,11 @@
           "component": "text",
           "valueType": "string",
           "name": "imageAlt",
-          "label": "Alt",
-          "value": ""
+          "label": "Alt"
         },
         {
           "component": "text",
           "name": "text",
-          "value": "",
           "label": "Text",
           "valueType": "string"
         }
