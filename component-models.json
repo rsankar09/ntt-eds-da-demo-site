@@ -87,18 +87,6 @@
     "fields": [
       {
         "component": "reference",
-        "name": "items",
-        "label": "Items",
-        "valueType": "card",
-        "multi": true
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
-      {
-        "component": "reference",
         "valueType": "string",
         "name": "image",
         "label": "Image",
@@ -108,12 +96,13 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Image Alt",
-        "multi": false
+        "label": "Alt",
+        "value": ""
       },
       {
-        "component": "richtext",
+        "component": "text",
         "name": "text",
+        "value": "",
         "label": "Text",
         "valueType": "string"
       }
