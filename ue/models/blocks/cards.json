@@ -7,6 +7,7 @@
       "filter": "cards",
       "plugins": {
         "da": {
+          "unsafeHTML": "<ul class='cards'><li class='card'><div class='card-image'><picture><img src='' alt=''></picture></div><div class='card-body'><h1></h1></div></li></ul>",
           "rows": "*",
           "columns": 1
         }
@@ -35,6 +36,7 @@
       }
     }
   ],
+
   "models": [
     {
       "id": "cards",
@@ -73,6 +75,7 @@
       ]
     }
   ],
+
   "filters": [
     {
       "id": "cards",
